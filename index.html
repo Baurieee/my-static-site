@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Well, hello there</title>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: grid;
+      place-items: center;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: linear-gradient(135deg, #ff4fd8, #00e5ff, #ffe600, #7cff00);
+      background-size: 300% 300%;
+      animation: wobble 6s ease-in-out infinite;
+    }
+
+    .card {
+      padding: 28px 34px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.18);
+      border: 3px dashed rgba(0,0,0,0.35);
+      backdrop-filter: blur(10px);
+      transform: rotate(-2deg);
+      box-shadow: 0 18px 45px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 4rem);
+      letter-spacing: 0.02em;
+      color: #111;
+      text-shadow:
+        3px 3px 0 #00ff95,
+        -3px -3px 0 #ff3d00,
+        6px -2px 0 #7a00ff;
+    }
+
+    .sparkle {
+      margin-top: 10px;
+      font-weight: 700;
+      color: #111;
+      background: #fff;
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      transform: rotate(3deg);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+    }
+
+    @keyframes wobble {
+      0%   { background-position: 0% 50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>well, hello there</h1>
+    <div class="sparkle">✨ extremely serious website ✨</div>
+  </div>
+</body>
+</html>
